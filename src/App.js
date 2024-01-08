@@ -11,9 +11,9 @@ import Car from './componentes/Car';
 import FormState from './componentes/FormState';
 import Nota from './componentes/Nota';
 import Resultado from './componentes/Resultado';
-import Caixa from './componentes/Caixa';
-import Canal from './componentes/Canal';
 import UseEffect from './componentes/UseEffect';
+import LocalStorage from './componentes/LocalStorage';
+import Classes from './componentes/Classes';
 
 export default function App() {
   
@@ -59,13 +59,10 @@ export default function App() {
       <Nota num={4} nome={nota4} nota={nota4} setNota={setNota4}/>
       <Resultado somaNotas={parseFloat(nota1) + parseFloat(nota2) + parseFloat(nota3) + parseFloat(nota4)} />
 
-      <Caixa site="www.fernandopereira.com.br">
-        <h1>Curso - React</h1>
-        <p>Fernando Pereira</p>
-      </Caixa>
-      <Canal/>
-
       <UseEffect/>
+
+      <LocalStorage />
+      <Classes />
 
       </>
     );

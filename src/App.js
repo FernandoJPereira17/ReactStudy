@@ -14,6 +14,7 @@ import Resultado from './componentes/Resultado';
 import UseEffect from './componentes/UseEffect';
 import LocalStorage from './componentes/LocalStorage';
 import Classes from './componentes/Classes';
+import Carro from './componentes/Carro';
 
 export default function App() {
   
@@ -63,6 +64,7 @@ export default function App() {
 
       <LocalStorage />
       <Classes />
+      <Carro fator={10}/>
 
       </>
     );
